@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/igorazevedo/Desktop/Programming/ChatBot-Skills/EchoSkillBot/EchoSkillBot.csproj": {}
+  },
+  "projects": {
+    "/Users/igorazevedo/Desktop/Programming/ChatBot-Skills/EchoSkillBot/EchoSkillBot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/igorazevedo/Desktop/Programming/ChatBot-Skills/EchoSkillBot/EchoSkillBot.csproj",
+        "projectName": "Microsoft.BotBuilderSamples.EchoSkillBot",
+        "projectPath": "/Users/igorazevedo/Desktop/Programming/ChatBot-Skills/EchoSkillBot/EchoSkillBot.csproj",
+        "packagesPath": "/Users/igorazevedo/.nuget/packages/",
+        "outputPath": "/Users/igorazevedo/Desktop/Programming/ChatBot-Skills/EchoSkillBot/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/igorazevedo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.Core": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

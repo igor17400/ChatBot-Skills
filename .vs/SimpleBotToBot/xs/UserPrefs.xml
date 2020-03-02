@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{966E5AB4-0697-4F8B-99CE-A80AE262A10A}|SimpleRootBot">
+  <MonoDevelop.Ide.ItemProperties.SimpleRootBot PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleRootBot/Properties/launchSettings.json">
+    <Files>
+      <File FileName="EchoSkillBot/Properties/launchSettings.json" Line="28" Column="2" />
+      <File FileName="SimpleRootBot/Properties/launchSettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SimpleBotToBot" expanded="True">
+            <Node name="EchoSkillBot" expanded="True">
+              <Node name="Authentication" expanded="True" />
+              <Node name="Bots" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="manifest" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="SimpleRootBot" expanded="True">
+              <Node name="Bots" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="launchSettings.json" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
