@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{B52CD85F-D0EF-4130-B9EF-03DCFF826CD6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bots/QnAMultiturnBot.cs">
+    <Files>
+      <File FileName="appsettings.json" Line="6" Column="76" />
+      <File FileName="Dialog/RootDialog.cs" Line="13" Column="1" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Dialog/QnAMakerMultiturnDialog.cs" Line="1" Column="1" />
+      <File FileName="Controllers/BotController.cs" Line="1" Column="1" />
+      <File FileName="AdapterWithErrorHandler.cs" Line="1" Column="1" />
+      <File FileName="Bots/QnAMultiturnBot.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QnAMultiturnBot" expanded="True">
+            <Node name="QnAMultiturnBot" expanded="True">
+              <Node name="Bots" expanded="True">
+                <Node name="QnAMultiturnBot.cs" selected="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="DeploymentTemplates" expanded="True" />
+              <Node name="Dialog" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.QnAMultiturnBot PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
