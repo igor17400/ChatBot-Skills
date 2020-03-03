@@ -15,7 +15,8 @@ etc...
 
 - As we can in the image below, if we write "countries" or something similar, the chatbot display an adaptive card showing other options.
 
-![Local Chatbot](Images/chatbot-image1.png)
+<img src="/Images/chatbot-image1.png"alt="chatbot"
+	title="A cute kitten" width="100" height="100" />
 
 - Then we can click in another option to continue the chat. 
 
