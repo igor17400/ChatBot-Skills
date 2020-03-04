@@ -30,4 +30,7 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dialogs\" />
+  </ItemGroup>
 </Project>

@@ -12468,13 +12468,14 @@
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/igorazevedo/.nuget/NuGet/NuGet.Config"
+        "/Users/igorazevedo/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://botbuilder.myget.org/F/experimental/api/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {

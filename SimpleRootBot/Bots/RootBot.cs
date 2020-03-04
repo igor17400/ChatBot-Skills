@@ -16,6 +16,17 @@ using Newtonsoft.Json;
 
 namespace Microsoft.BotBuilderSamples.SimpleRootBot.Bots
 {
+
+    class SkillsIds
+    {
+        private BotFrameworkSkill targetSkill; // field
+        public BotFrameworkSkill TargetSkill   // property
+        {
+            get { return targetSkill; }
+            set { targetSkill = value; }
+        }
+    }
+
     public class RootBot : ActivityHandler
     {
         private readonly IStatePropertyAccessor<BotFrameworkSkill> _activeSkillProperty;
@@ -44,13 +55,14 @@ namespace Microsoft.BotBuilderSamples.SimpleRootBot.Bots
             }
 
             // We use a single skill in this example.
-            var targetSkillId = "EchoSkillBot";
+            var targetSkillId = "QnAMultiturnBot";
+
             if (!_skillsConfig.Skills.TryGetValue(targetSkillId, out _targetSkill))
             {
                 throw new ArgumentException($"Skill with ID \"{targetSkillId}\" not found in configuration");
             }
 
-            // Create state property to track the active skill
+            //Create state property to track the active skill
             _activeSkillProperty = conversationState.CreateProperty<BotFrameworkSkill>(ActiveSkillPropertyName);
         }
 
@@ -75,9 +87,26 @@ namespace Microsoft.BotBuilderSamples.SimpleRootBot.Bots
 
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
-            if (turnContext.Activity.Text.Contains("skill"))
+            //connecting to the echobot skill
+            if (turnContext.Activity.Text.Contains("echobot skill"))
             {
+
+                //var targetSkillId = "EchoSkillBot";
+                //BotFrameworkSkill value;
+
+                //if (!_skillsConfig.Skills.TryGetValue(targetSkillId, out value))
+                //{
+                //    skills_Ids.TargetSkill = value;
+                //    Console.WriteLine("skills_Ids.TargetSkill ---> " + skills_Ids.TargetSkill);
+                //    Console.WriteLine("value ---> " + skills_Ids.TargetSkill);
+                //    throw new ArgumentException($"Skill with ID \"{targetSkillId}\" not found in configuration");
+                //}
+                //Console.WriteLine("skills_Ids.TargetSkill ---> " + skills_Ids.TargetSkill);
+                //Console.WriteLine("value ---> " + value);
+
                 await turnContext.SendActivityAsync(MessageFactory.Text("Got it, connecting you to the skill..."), cancellationToken);
+
+
 
                 // Save active skill in state
                 await _activeSkillProperty.SetAsync(turnContext, _targetSkill, cancellationToken);
@@ -87,8 +116,31 @@ namespace Microsoft.BotBuilderSamples.SimpleRootBot.Bots
                 return;
             }
 
+            ////connecting to the countris QnA skill
+            //else if(turnContext.Activity.Text.Contains("countries QnA"))
+            //{
+
+            //    var targetSkillId = "EchoSkillBot";
+            //    BotFrameworkSkill value;
+
+            //    if (!_skillsConfig.Skills.TryGetValue(targetSkillId, out value))
+            //    {
+            //        skills_Ids.TargetSkill = value;
+            //        throw new ArgumentException($"Skill with ID \"{targetSkillId}\" not found in configuration");
+            //    }
+
+            //    await turnContext.SendActivityAsync(MessageFactory.Text("Got it, connecting you to the skill..."), cancellationToken);
+
+            //    // Save active skill in state
+            //    await _activeSkillProperty.SetAsync(turnContext, skills_Ids.TargetSkill, cancellationToken);
+
+            //    // Send the activity to the skill
+            //    await SendToSkill(turnContext, skills_Ids.TargetSkill, cancellationToken);
+            //    return;
+            //}
+
             // just respond
-            await turnContext.SendActivityAsync(MessageFactory.Text("Me no nothin'. Say \"skill\" and I'll patch you through"), cancellationToken);
+            await turnContext.SendActivityAsync(MessageFactory.Text("Me no nothin'. Say \"echobot skill or countries QnA\" and I'll patch you through"), cancellationToken);
 
             // Save conversation state
             await _conversationState.SaveChangesAsync(turnContext, force: true, cancellationToken: cancellationToken);

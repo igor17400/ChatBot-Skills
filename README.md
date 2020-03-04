@@ -1,5 +1,5 @@
 # ChatBot-Skills
-The goal of this repository is to implement several skills, each one with different objectives. 
+The goal of this repository is to implement a chatbot with a skill using Microsoft's framework. The skill is a chatbot with different responsabilities. 
 
 ## Countries FAQ
 
@@ -11,27 +11,55 @@ Examples of questions:
 - How many people live in United States?
 etc...
 
-1) I have cloned microsoft repository repository about qna multiturn --> https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/70.qnamaker-multiturn-sample
+- I have cloned microsoft repository repository about qna multiturn --> https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/70.qnamaker-multiturn-sample
 
-- As we can in the image below, if we write "countries" or something similar, the chatbot display an adaptive card showing other options.
+As we can in the image below, if we write "countries" or something similar, the chatbot display an adaptive card showing other options.
 
-<img src="/Images/chatbot-image1.png"alt="chatbot"
-	title="A cute kitten" width="100" height="100" />
+<img 
+    src="./Images/chatbot-image1.png"
+    alt="chatbot" 
+    title="A cute kitten" 
+    width="400" 
+    height="400"></img>
 
-- Then we can click in another option to continue the chat. 
+Then we can click in another option to continue the chat. 
 
-![Local Chatbot](Images/chatbot-image2.png)
+<img 
+    src="./Images/chatbot-image2.png"
+    alt="chatbot" 
+    title="A cute kitten" 
+    width="400" 
+    height="400"></img>
 
 <br></br>
 
-![Local Chatbot](Images/chatbot-image3.png)
+<img 
+    src="./Images/chatbot-image3.png"
+    alt="chatbot" 
+    title="A cute kitten" 
+    width="400" 
+    height="400"></img>
 
-- Another cool function of this chatbot is capability to recognize written language and not only buttons. Therefore I can type the name of a country in the middle of the conversation and the chatbot will give me the information about this country.
+Another cool function of this chatbot is capability to recognize written language and not only buttons. Therefore, I can type the name of a country in the middle of the conversation and the chatbot will give me the information about this country.
 
-![Local Chatbot](Images/chatbot-image4.png)
+<img 
+    src="./Images/chatbot-image4.png"
+    alt="chatbot" 
+    title="A cute kitten" 
+    width="400" 
+    height="400"></img>
 
 As we can see this is a demostration 
 of a multiturn chat with information about countries. 
 
+I have implemented more informations about countries. But I guess all thoses images are enough to understand the concept of QnA multiturn.
 
-## Linking the Countries FAQ with a skill in a main chatbot
+
+## Linking the Countries QnA with a skill in a main chatbot
+
+Following these tutorials from Microsoft we can implement a central chatbot with several other skills.
+
+- https://docs.microsoft.com/en-us/azure/bot-service/skill-implement-skill?view=azure-bot-service-4.0&tabs=cs
+- https://docs.microsoft.com/en-us/azure/bot-service/skill-implement-consumer?view=azure-bot-service-4.0&tabs=cs
+
+The first image is the SimpleRootBot. By writing "list of countries" this central bot invokes the Countries QnA skill. 
